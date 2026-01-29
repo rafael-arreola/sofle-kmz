@@ -1,4 +1,4 @@
-dname: Build ZMK firmware
+name: Build ZMK firmware
 on:
   workflow_dispatch:
   push:
