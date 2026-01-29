@@ -1,11 +1,12 @@
-name: Build ZMK firmware
+dname: Build ZMK firmware
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths-ignore:
       - "keymap-drawer/**"
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-
